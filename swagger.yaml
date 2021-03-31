@@ -1,0 +1,113 @@
+swagger: '2.0'
+info:
+  title: Restful booker
+  description: Description
+  version: 1.0.0
+host: 'localhost:3001'
+basePath: /
+tags: []
+schemes:
+  - http
+consumes: []
+produces: []
+paths:
+  /ping:
+    get:
+      tags: []
+      description: 'A simple health check endpoint to confirm whether the API is up and running.'
+      parameters: []
+      responses:
+        200: 
+          description: "Default HTTP 201 response"
+       
+  /booking:
+    get:
+      tags: []
+      description: 'Returns the ids of all the bookings that exist within the API.'
+      parameters:
+        - name: firstname
+          in: query
+          type: string
+        - name: lastname
+          in: query
+          type: string
+        - name: checkin
+          in: query
+          type: string
+        - name: checkout
+          in: query
+          type: string
+      responses: 
+        200: 
+          description: "Array of objects containing booking id"
+          schema: 
+              $ref: "#/definitions/ApiResponse"
+            
+    post:
+      tags: []
+      description: 'Creates a new booking in the API'
+      parameters: []
+      responses: 
+        200:
+          description: ""
+  '/booking/{id}':
+    get:
+      tags: []
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+      responses: 
+        200: 
+          description: ""
+    put:
+      tags: []
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+      responses:
+        200: 
+          description: ""
+    patch:
+      tags: []
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+      responses: 
+        200:
+          description: ""
+    delete:
+      tags: []
+      description: ''
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+      responses: 
+        200:
+          description: ""
+  /auth:
+    post:
+      tags: []
+      description: ''
+      parameters: []
+      responses: 
+        200:
+          description: ""
+definitions: 
+  ApiResponse:
+    type: array
+    items: 
+      type: object
+      properties:
+        bookingId:
+          type: integer

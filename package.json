@@ -5,8 +5,7 @@
   "scripts": {
     "start": "cross-env SEED=true node ./bin/www",
     "test": "mocha -R spec tests/spec.js",
-    "build_docs": "apidoc -i ./routes/ -o public/apidoc/",
-    "swagger-autogen": "node ./swagger.js"
+    "build_docs": "apidoc -i ./routes/ -o public/apidoc/"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -21,7 +20,6 @@
     "morgan": "^1.10.0",
     "nedb": "^1.8.0",
     "pug": "^3.0.0",
-    "swagger-autogen": "^2.6.8",
     "universal-analytics": "^0.4.23",
     "uuid": "^8.3.1",
     "validate.js": "^0.13.1",

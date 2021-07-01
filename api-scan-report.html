@@ -81,7 +81,7 @@ ZAP Scanning Report
         <p>
 </p>
         <h3 class="left-header">Summary of Alerts</h3>
-        <h3 class="time-stamp">Generated on Wed, 31 Mar 2021 22:05:25</h3>
+        <h3 class="time-stamp">Generated on Thu, 8 Apr 2021 14:21:13</h3>
         <table width="45%" class="summary">
             <tr bgcolor="#666666">
                 <th width="45%" height="24">Risk 
@@ -243,20 +243,6 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=any%0D%0ASet-cookie%3A+Tamper%3Df54fdc18-b474-4984-b908-4c07f84c765c&amp;checkout=checkout</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout%22</td>
             </tr>
               
@@ -341,7 +327,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=https%3A%2F%2F8865953440074674828.owasp.org</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=checkin%27%3Bsleep+15%3B%27&amp;checkout=checkout</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -355,7 +341,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=checkin%27%3Bsleep+15%3B%27&amp;checkout=checkout</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=any%0ASet-cookie%3A+Tamper%3D5f60e41e-68e3-4687-8457-0cdba4527706&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -374,20 +360,6 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent2">Method</td><td width="80%">POST</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=HtTp%3A%2F%2F8865953440074674828.owasp.org&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -496,6 +468,34 @@ ZAP Scanning Report
   
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=www.google.com%3A80%2F&amp;checkout=checkout</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname+AND+1%3D2+--+&amp;checkin=checkin&amp;checkout=checkout</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 500</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname%27%26cat+%2Fetc%2Fpasswd%26%27&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -916,6 +916,20 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=%2F%2F8198192984174147674.owasp.org&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">text/plain</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=response.write%28100%2C000*100%2C000%29&amp;checkin=checkin&amp;checkout=checkout</td>
             </tr>
               
@@ -944,6 +958,20 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=HtTp%3A%2F%2F8198192984174147674.owasp.org&amp;checkout=checkout</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">text/plain</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=checkin%27+OR+%271%27%3D%271%27+--+&amp;checkout=checkout</td>
             </tr>
               
@@ -958,35 +986,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=%2F%2F8865953440074674828.owasp.org&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">text/plain</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=checkin&amp;checkout=checkout</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">text/plain</td>
-            </tr>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=Set-cookie%3A+Tamper%3Df54fdc18-b474-4984-b908-4c07f84c765c&amp;checkout=checkout</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1028,7 +1028,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=%3B&amp;checkin=checkin&amp;checkout=checkout</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking?firstname=firstname&amp;lastname=lastname&amp;checkin=https%3A%2F%2F8198192984174147674.owasp.org&amp;checkout=checkout</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1154,25 +1154,11 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%">Description</td><td width="80%"><p>A response code of 404 was returned by the server.</p><p>This may indicate that the application is failing to handle unexpected input correctly.</p><p>Raised by the 'Alert on HTTP Response Code Error' script</p></td>
+                <td width="20%">Description</td><td width="80%"><p>A response code of 403 was returned by the server.</p><p>This may indicate that the application is failing to handle unexpected input correctly.</p><p>Raised by the 'Alert on HTTP Response Code Error' script</p></td>
             </tr>
             <TR vAlign="top">
                 <TD colspan="2"></TD>
             </TR>
-              
-  
-  
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking/8454628057547061157</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
-            </tr>
-              
-            <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 404</td>
-            </tr>
               
   
   
@@ -1186,6 +1172,20 @@ ZAP Scanning Report
               
             <tr bgcolor="#e8e8e8">
                 <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 403</td>
+            </tr>
+              
+  
+  
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/booking/775580884101483036</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Method</td><td width="80%">GET</td>
+            </tr>
+              
+            <tr bgcolor="#e8e8e8">
+                <td width="20%" class="indent2">Evidence</td><td width="80%">HTTP/1.1 404</td>
             </tr>
               
   
@@ -1275,7 +1275,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/.htaccess</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/3543636480252979794</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
@@ -1289,7 +1289,7 @@ ZAP Scanning Report
   
   
             <tr bgcolor="#e8e8e8">
-                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/7642008566266196937</td>
+                <td width="20%" class="indent1">URL</td><td width="80%">http://localhost:3001/.htaccess</td>
             </tr>
               
             <tr bgcolor="#e8e8e8">
